@@ -1,21 +1,21 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Rodrigo Landulfo
 // Data atual  : 30/08/2023
 Var
    // Variaveis
    // VE= VALOR EMPRESTIMO
    // RM= RENDA MENSAL
-   // VP= VALOR DA PRESTAÇÃO
-   // QP= QUANTIDADE DE PRESTAÇÕES
+   // VP= VALOR DA PRESTAÃ‡ÃƒO
+   // QP= QUANTIDADE DE PRESTAÃ‡Ã•ES
 
    VE,RM, VP, QP: real
 
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+   // Exigindo os dados do Usuario
 
    escreval ("Digite sua Renda Mensal: ")
    leia (RM)
@@ -25,14 +25,16 @@ Inicio
    leia (VE)
    limpatela
 
-   escreval ("Digite o Numero de Prestações q deseja: ")
+   escreval ("Digite o Numero de PrestaÃ§Ãµes q deseja: ")
    leia (QP)
    limpatela
+
+// CONDICIONAL 
 
    se (VE <= RM * 10) e (VP <= RM * 30/100)  entao
       VP <- (VE / QP)
       escreval ("Emprestimo Aceito ")
-      escreval ("Valor da Prestação: ", VP)
+      escreval ("Valor da PrestaÃ§Ã£o: ", VP)
    senao
       escreval ("Emprestimo Negado ")
    fimse
